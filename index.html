@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css.css">
+  <title>T.R.A.N.S.L.I.T</title>
+  <style>
+  body {
+    background-color: black;
+
+  }
+
+  .glow {
+
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #99600b, 0 0 40px #a56709, 0 0 50px #c9700b, 0 0 60px;
+    }
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #c49516e5, 0 0 40px #d1853e, 0 0 50px #d47842, 0 0 60px #ff4d656c, 0 0 70px #ff4da6, 0 0 80px #ff4da669;
+    }
+  }
+  </style>
+</head>
+
+<body>
+
+  <style>
+    h1 {
+      color: rgba(231, 160, 54, 0.74);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      text-align: left;
+
+    }
+    h2 {
+
+      color: rgb(121, 77, 12);;
+
+      text-align: left;
+
+
+    }
+
+    body {
+      background-image: url('https://media.timeout.com/images/105643660/image.jpg');
+      background-size: 800px;
+      background-repeat: no-repeat;
+
+  background-size: cover;
+    }
+    h1{
+      color: rgba(138, 46, 4, 0.973);
+
+      text-align: center;
+
+    }
+
+    p {
+
+      color: rgba(100, 50, 3, 0.74);
+
+      text-align: left;
+
+
+    }
+
+  </style>
+  <div class="header">
+    <h1>TRANSLIT</h1>
+    <h1 class="glow"> web application that convert text in Russian into its transliteration and save it to a dictionary</h1>
+    <hr>
+    <p> The word Transliteration comes from Latin transliteratus (trans- "across" + littera "letter"). Transliteration is the method of representing letters or words of one alphabet in the characters of another alphabet or script.
+
+      <p > A special case, when transliteration applied to Russian letters to represent them in Latin characters is called Translit. Initially translit was applied only within Russian speaking community (known as "Russian translit") to transliterate Cyrillic texts and later was widely applied to many other Non-Latin languages and alphabets  </p>
+
+      <h2 class="glow" style="text-align:left"> <ul>Release 1. Some CSS</ul></h2>
+      <h2 class="glow" style="text-align:left"> <ul>Release 2. Flexbox</ul></h2>
+      <h2 class="glow" style="text-align:left"> <ul>Release 3. @media  </ul></h2>
+      <h2 class="glow" style="text-align:left"> <ul>Release 4. Listener </ul></h2>
+      <h2 class="glow" style="text-align:left"> <ul>Release 5. CreateElement </ul></h2>
+      <h2 class="glow" style="text-align:left"> <ul>Release 6. Overflow </ul> </h2>
+      <h2 class="glow" style="text-align:left"> <ul>Release 7. Title on :hover </ul></h2>
+      <h2 class="glow" style="text-align:left"> <ul>Release 8. Translit text </ul></h2>
+
+
+  <div id="body">
+    <div id="head">
+      <input type="text" name="in-text" id="in-text" class="in" placeholder="enter text">
+      <button type="submit" id="in-button" class="in">Add</button>
+    </div>
+
+    <div id="dictionary">
+      <div id="added-words" class="word-box">
+
+      </div>
+
+      <div id="translit-words" class="word-box">
+
+      </div>
+    </div>
+  </div>
+
+
+    <script src="js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+  }
+
+  #body{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 200px auto;
+    font-family: Andale Mono, monospace;
+  }
+
+  .header {
+
+    text-align: center;
+    padding: 32px;
+    width: 700px;
+    margin: 10px auto;
+  }
+
+  #head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0;
+    height: 80px;
+    width: 700px;
+    background-color: rgba(221, 176, 140, 0.897);
+    border-radius: 100px;
+  }
+
+  .in {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
+  ::placeholder {
+    color: rgba(184, 111, 69, 0.692);
+  }
+
+  input:focus {
+    outline: none;
+    background-color: aliceblue;
+    box-shadow: 0 0 12px rgb(0, 0, 0);
+  }
+
+  button:focus {
+    outline: none;
+    border: 2px rgb(92, 144, 204) solid;
+  }
+
+  #in-button {
+    background-color: rgb(170, 128, 94);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    width: 120px;
+  }
+
+  #dictionary {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .word-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: auto;
+    min-height: 190px;
+    padding: 10px 0 22px;
+    background-color: rgba(221, 176, 140, 0.897);
+    color: aliceblue;
+    border-radius: 20px;
+  }
+
+  .word {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 50;
+  }
+
+  @media (max-width: 500px) {
+
+    body {
+      background-color: aliceblue;
+    }
+
+    #main {
+      margin: 0;
+      width: 100%;
+    }
+
+    #translit-head {
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+      justify-content: flex-start;
+    }
+
+    .in {
+      font-size: 14px;
+    }
+
+    #in-text {
+      width: 150px;
+      margin-left: 30px;
+    }
+
+    #in-button {
+      width: 90px
+    }
+
+    #dictionary {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .word-box {
+      width: inherit;
+      height: 190px;
+      margin-bottom: 2px;
+      border-radius: 0;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+
+    .word {
+      margin-left: 30px;
+    }
